@@ -13282,6 +13282,10 @@ http://dangerousprototypes.com</description>
 <pinref part="CAN-TRNS-1" gate="G$1" pin="RS"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="289.56" y1="86.36" x2="292.1" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="CAN-CNT-1" gate="D" pin="RX1BF"/>
+<wire x1="271.78" y1="76.2" x2="281.94" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="76.2" x2="281.94" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="86.36" x2="289.56" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -13289,6 +13293,10 @@ http://dangerousprototypes.com</description>
 <pinref part="CAN-TRNS-2" gate="G$1" pin="RS"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="289.56" y1="48.26" x2="292.1" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="CAN-CNT-2" gate="D" pin="RX1BF"/>
+<wire x1="271.78" y1="38.1" x2="281.94" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="38.1" x2="281.94" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="48.26" x2="289.56" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -13856,6 +13864,10 @@ http://dangerousprototypes.com</description>
 <pinref part="CAN-TRNS-3" gate="G$1" pin="RS"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="294.64" y1="5.08" x2="297.18" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="CAN-CNT-3" gate="D" pin="RX1BF"/>
+<wire x1="281.94" y1="-5.08" x2="287.02" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="-5.08" x2="287.02" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="5.08" x2="294.64" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CAN3HIGH" class="0">
