@@ -13056,10 +13056,9 @@ http://dangerousprototypes.com</description>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="D3" library="adafruit" deviceset="DIODE" device="SOD-323F"/>
 <part name="D2" library="adafruit" deviceset="DIODE" device="SOD-323F"/>
-<part name="A8" library="wirepad" deviceset="WIREPAD" device="SMD1,27-254" value=""/>
-<part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="BSS123LT1G" value="BSS138"/>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
-<part name="R9" library="resistor" deviceset="R-US_" device="M0805" value="10k"/>
+<part name="R9" library="resistor" deviceset="R-US_" device="M0805" value="5k"/>
+<part name="R13" library="resistor" deviceset="R-US_" device="M0805" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -13151,10 +13150,9 @@ http://dangerousprototypes.com</description>
 <instance part="SUPPLY6" gate="GND" x="53.34" y="26.67"/>
 <instance part="D3" gate="G$1" x="-20.32" y="93.98" rot="R270"/>
 <instance part="D2" gate="G$1" x="15.24" y="73.66" rot="R90"/>
-<instance part="A8" gate="G$1" x="165.1" y="144.78" rot="R270"/>
-<instance part="Q2" gate="G$1" x="208.28" y="-53.34" rot="R270"/>
-<instance part="SUPPLY11" gate="GND" x="200.66" y="-58.42"/>
-<instance part="R9" gate="G$1" x="200.66" y="-45.72" rot="R90"/>
+<instance part="SUPPLY11" gate="GND" x="175.26" y="-71.12"/>
+<instance part="R9" gate="G$1" x="175.26" y="-48.26" rot="R90"/>
+<instance part="R13" gate="G$1" x="175.26" y="-60.96" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -13315,8 +13313,6 @@ http://dangerousprototypes.com</description>
 <wire x1="213.36" y1="5.08" x2="213.36" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="CAN-CNT-1" gate="D" pin="INT"/>
 <wire x1="213.36" y1="96.52" x2="238.76" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="5.08" x2="213.36" y2="-53.34" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="G$1" pin="D"/>
 </segment>
 </net>
 <net name="N$24" class="0">
@@ -13384,8 +13380,10 @@ http://dangerousprototypes.com</description>
 <segment>
 <pinref part="U$1" gate="G$1" pin="PB4(ADC11)"/>
 <wire x1="134.62" y1="38.1" x2="165.1" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="38.1" x2="165.1" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="A8" gate="G$1" pin="P"/>
+<wire x1="165.1" y1="38.1" x2="165.1" y2="-40.64" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="-40.64" x2="175.26" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="-40.64" x2="175.26" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$37" class="0">
@@ -13672,12 +13670,9 @@ http://dangerousprototypes.com</description>
 <wire x1="73.66" y1="29.21" x2="76.2" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="R13" gate="G$1" pin="1"/>
 <pinref part="SUPPLY11" gate="GND" pin="GND"/>
-<wire x1="200.66" y1="-50.8" x2="200.66" y2="-53.34" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="G$1" pin="S"/>
-<wire x1="200.66" y1="-53.34" x2="200.66" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="-53.34" x2="200.66" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="-66.04" x2="175.26" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VBUS" class="0">
@@ -14274,15 +14269,15 @@ http://dangerousprototypes.com</description>
 </net>
 <net name="N$29" class="0">
 <segment>
-<pinref part="R9" gate="G$1" pin="2"/>
-<pinref part="Q2" gate="G$1" pin="G"/>
-<wire x1="200.66" y1="-40.64" x2="208.28" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="-40.64" x2="208.28" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="-40.64" x2="190.5" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="-40.64" x2="190.5" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="-81.28" x2="114.3" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="-81.28" x2="114.3" y2="-81.28" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="P1_0"/>
 <wire x1="114.3" y1="-81.28" x2="114.3" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="-81.28" x2="167.64" y2="-55.88" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="167.64" y1="-55.88" x2="175.26" y2="-55.88" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="-53.34" x2="175.26" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="175.26" y="-55.88"/>
 </segment>
 </net>
 </nets>
