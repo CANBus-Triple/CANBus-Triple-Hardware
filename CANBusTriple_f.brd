@@ -11387,6 +11387,10 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="11.7856" y1="36.9824" x2="11.3792" y2="36.9824" width="0.5" layer="1"/>
 <wire x1="11.3792" y1="36.9824" x2="10.5664" y2="37.7952" width="0.5" layer="1"/>
 <wire x1="10.5664" y1="37.7952" x2="9.7536" y2="37.7952" width="0.5" layer="1"/>
+<contactref element="L1" pad="2"/>
+<wire x1="7.6396" y1="39.0144" x2="7.6396" y2="38.69" width="0.5" layer="1"/>
+<wire x1="7.6396" y1="38.69" x2="8.5344" y2="37.7952" width="0.5" layer="1"/>
+<wire x1="8.5344" y1="37.7952" x2="9.7536" y2="37.7952" width="0.5" layer="1"/>
 </signal>
 <signal name="CAN1HIGH">
 <contactref element="CAN-TRNS-1" pad="7"/>
