@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9981,10 +9981,10 @@ High-power, low thermal resistance package.</description>
 <part name="C1" library="resistor" deviceset="C-US" device="C0603" value="1uF"/>
 <part name="C2" library="resistor" deviceset="C-US" device="C0603" value="2.2uF"/>
 <part name="U$1" library="adafruit" deviceset="ATMEGA32U4" device="-AU" value=""/>
-<part name="CAN-CNT-1" library="can" deviceset="MCP2515" device="SO"/>
-<part name="CAN-CNT-2" library="can" deviceset="MCP2515" device="SO"/>
-<part name="CAN-TRNS-1" library="can" deviceset="MCP2551" device="SO8"/>
-<part name="CAN-TRNS-2" library="can" deviceset="MCP2551" device="SO8"/>
+<part name="CC1" library="can" deviceset="MCP2515" device="SO"/>
+<part name="CC2" library="can" deviceset="MCP2515" device="SO"/>
+<part name="CT1" library="can" deviceset="MCP2551" device="SO8"/>
+<part name="CT2" library="can" deviceset="MCP2551" device="SO8"/>
 <part name="CN1" library="adafruit" deviceset="USB" device="MINIB"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
@@ -10014,8 +10014,8 @@ High-power, low thermal resistance package.</description>
 <part name="A2" library="wirepad" deviceset="WIREPAD" device="SMD1,27-254" value=""/>
 <part name="A3" library="wirepad" deviceset="WIREPAD" device="SMD1,27-254" value=""/>
 <part name="R3" library="resistor" deviceset="R-US_" device="M0805" value="10k"/>
-<part name="CAN-CNT-3" library="can" deviceset="MCP2515" device="SO"/>
-<part name="CAN-TRNS-3" library="can" deviceset="MCP2551" device="SO8"/>
+<part name="CC3" library="can" deviceset="MCP2515" device="SO"/>
+<part name="CT3" library="can" deviceset="MCP2551" device="SO8"/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
 <part name="R5" library="resistor" deviceset="R-US_" device="M0805" value="10k"/>
 <part name="U1" library="ble112" deviceset="SF-BLUEGIGA_BLE112-A-VISUAL" device="" value="BLE112"/>
@@ -10029,9 +10029,9 @@ High-power, low thermal resistance package.</description>
 <part name="C4" library="resistor" deviceset="C-US" device="C0603" value="1uF"/>
 <part name="IC4" library="linear" deviceset="MCP1703" device="CB"/>
 <part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
-<part name="CAN1-TRM" library="resistor" deviceset="R-US_" device="R0603" value="120ohm"/>
-<part name="CAN2-TRM" library="resistor" deviceset="R-US_" device="R0603" value="120ohm"/>
-<part name="CAN3-TRM" library="resistor" deviceset="R-US_" device="R0603" value="120ohm"/>
+<part name="R14" library="resistor" deviceset="R-US_" device="R0603" value="120ohm"/>
+<part name="R15" library="resistor" deviceset="R-US_" device="R0603" value="120ohm"/>
+<part name="R16" library="resistor" deviceset="R-US_" device="R0603" value="120ohm"/>
 <part name="U$10" library="CustomParts_CBT" deviceset="2X9-1.27MM-HEADER" device=""/>
 <part name="JP1" library="CustomParts_CBT" deviceset="2X6-2.54MM" device=""/>
 <part name="SJ2" library="SparkFun" deviceset="SOLDERJUMPER" device="NO" value="TERM1"/>
@@ -10065,14 +10065,14 @@ High-power, low thermal resistance package.</description>
 <instance part="C1" gate="G$1" x="-5.08" y="76.2"/>
 <instance part="C2" gate="G$1" x="38.1" y="76.2"/>
 <instance part="U$1" gate="G$1" x="109.22" y="35.56"/>
-<instance part="CAN-CNT-1" gate="D" x="256.54" y="88.9"/>
-<instance part="CAN-CNT-1" gate="P" x="-20.32" y="134.62"/>
-<instance part="CAN-CNT-2" gate="D" x="256.54" y="50.8"/>
-<instance part="CAN-CNT-2" gate="P" x="-12.7" y="134.62"/>
-<instance part="CAN-TRNS-1" gate="G$1" x="304.8" y="91.44"/>
-<instance part="CAN-TRNS-1" gate="G$2" x="20.32" y="134.62"/>
-<instance part="CAN-TRNS-2" gate="G$1" x="304.8" y="53.34"/>
-<instance part="CAN-TRNS-2" gate="G$2" x="33.02" y="134.62"/>
+<instance part="CC1" gate="D" x="256.54" y="88.9"/>
+<instance part="CC1" gate="P" x="-20.32" y="134.62"/>
+<instance part="CC2" gate="D" x="256.54" y="50.8"/>
+<instance part="CC2" gate="P" x="-12.7" y="134.62"/>
+<instance part="CT1" gate="G$1" x="304.8" y="91.44"/>
+<instance part="CT1" gate="G$2" x="20.32" y="134.62"/>
+<instance part="CT2" gate="G$1" x="304.8" y="53.34"/>
+<instance part="CT2" gate="G$2" x="33.02" y="134.62"/>
 <instance part="CN1" gate="G$1" x="-15.24" y="48.26"/>
 <instance part="SUPPLY1" gate="GND" x="-27.94" y="66.04"/>
 <instance part="SUPPLY2" gate="GND" x="292.1" y="73.66"/>
@@ -10102,12 +10102,12 @@ High-power, low thermal resistance package.</description>
 <instance part="A2" gate="G$1" x="172.72" y="139.7" rot="R270"/>
 <instance part="A3" gate="G$1" x="177.8" y="134.62" rot="R270"/>
 <instance part="R3" gate="G$1" x="104.14" y="127"/>
-<instance part="CAN-CNT-3" gate="D" x="266.7" y="7.62"/>
-<instance part="CAN-TRNS-3" gate="G$1" x="309.88" y="10.16"/>
+<instance part="CC3" gate="D" x="266.7" y="7.62"/>
+<instance part="CT3" gate="G$1" x="309.88" y="10.16"/>
 <instance part="SUPPLY4" gate="GND" x="297.18" y="-7.62"/>
 <instance part="R5" gate="G$1" x="294.64" y="0" rot="R90"/>
-<instance part="CAN-CNT-3" gate="P" x="0" y="134.62"/>
-<instance part="CAN-TRNS-3" gate="G$2" x="48.26" y="134.62"/>
+<instance part="CC3" gate="P" x="0" y="134.62"/>
+<instance part="CT3" gate="G$2" x="48.26" y="134.62"/>
 <instance part="U1" gate="G$1" x="111.76" y="-35.56"/>
 <instance part="SUPPLY5" gate="GND" x="66.04" y="-43.18"/>
 <instance part="R10" gate="G$1" x="157.48" y="-17.78" rot="R90"/>
@@ -10119,9 +10119,9 @@ High-power, low thermal resistance package.</description>
 <instance part="C4" gate="G$1" x="50.8" y="-27.94"/>
 <instance part="IC4" gate="G$1" x="35.56" y="-25.4"/>
 <instance part="SUPPLY12" gate="GND" x="180.34" y="162.56"/>
-<instance part="CAN1-TRM" gate="G$1" x="335.28" y="99.06" rot="R90"/>
-<instance part="CAN2-TRM" gate="G$1" x="355.6" y="99.06" rot="R90"/>
-<instance part="CAN3-TRM" gate="G$1" x="375.92" y="99.06" rot="R90"/>
+<instance part="R14" gate="G$1" x="335.28" y="99.06" rot="R90"/>
+<instance part="R15" gate="G$1" x="355.6" y="99.06" rot="R90"/>
+<instance part="R16" gate="G$1" x="375.92" y="99.06" rot="R90"/>
 <instance part="U$10" gate="G$1" x="233.68" y="177.8"/>
 <instance part="JP1" gate="G$1" x="147.32" y="180.34" rot="R270"/>
 <instance part="SJ2" gate="1" x="330.2" y="116.84" rot="R180"/>
@@ -10153,40 +10153,40 @@ High-power, low thermal resistance package.</description>
 <nets>
 <net name="N$7" class="0">
 <segment>
-<pinref part="CAN-CNT-1" gate="D" pin="TXCAN"/>
-<pinref part="CAN-TRNS-1" gate="G$1" pin="TXD"/>
+<pinref part="CC1" gate="D" pin="TXCAN"/>
+<pinref part="CT1" gate="G$1" pin="TXD"/>
 <wire x1="271.78" y1="96.52" x2="292.1" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="CAN-TRNS-1" gate="G$1" pin="RXD"/>
-<pinref part="CAN-CNT-1" gate="D" pin="RXCAN"/>
+<pinref part="CT1" gate="G$1" pin="RXD"/>
+<pinref part="CC1" gate="D" pin="RXCAN"/>
 <wire x1="271.78" y1="93.98" x2="292.1" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="CAN-CNT-2" gate="D" pin="TXCAN"/>
-<pinref part="CAN-TRNS-2" gate="G$1" pin="TXD"/>
+<pinref part="CC2" gate="D" pin="TXCAN"/>
+<pinref part="CT2" gate="G$1" pin="TXD"/>
 <wire x1="271.78" y1="58.42" x2="292.1" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="CAN-CNT-2" gate="D" pin="RXCAN"/>
-<pinref part="CAN-TRNS-2" gate="G$1" pin="RXD"/>
+<pinref part="CC2" gate="D" pin="RXCAN"/>
+<pinref part="CT2" gate="G$1" pin="RXD"/>
 <wire x1="271.78" y1="55.88" x2="292.1" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCK" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PB1(SCK)"/>
-<pinref part="CAN-CNT-1" gate="D" pin="SCK"/>
+<pinref part="CC1" gate="D" pin="SCK"/>
 <wire x1="238.76" y1="88.9" x2="220.98" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="88.9" x2="220.98" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="50.8" x2="220.98" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="CAN-CNT-2" gate="D" pin="SCK"/>
+<pinref part="CC2" gate="D" pin="SCK"/>
 <wire x1="238.76" y1="50.8" x2="220.98" y2="50.8" width="0.1524" layer="91"/>
 <junction x="220.98" y="50.8"/>
 <wire x1="134.62" y1="30.48" x2="220.98" y2="30.48" width="0.1524" layer="91"/>
@@ -10196,7 +10196,7 @@ High-power, low thermal resistance package.</description>
 <junction x="220.98" y="30.48"/>
 <wire x1="220.98" y1="0" x2="241.3" y2="0" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="0" x2="241.3" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="CAN-CNT-3" gate="D" pin="SCK"/>
+<pinref part="CC3" gate="D" pin="SCK"/>
 <wire x1="241.3" y1="7.62" x2="248.92" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="114.3" x2="251.46" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="114.3" x2="251.46" y2="172.72" width="0.1524" layer="91"/>
@@ -10209,19 +10209,19 @@ High-power, low thermal resistance package.</description>
 </net>
 <net name="MOSI" class="0">
 <segment>
-<pinref part="CAN-CNT-2" gate="D" pin="SI"/>
+<pinref part="CC2" gate="D" pin="SI"/>
 <wire x1="223.52" y1="33.02" x2="223.52" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="48.26" x2="238.76" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="48.26" x2="223.52" y2="86.36" width="0.1524" layer="91"/>
 <junction x="223.52" y="48.26"/>
-<pinref part="CAN-CNT-1" gate="D" pin="SI"/>
+<pinref part="CC1" gate="D" pin="SI"/>
 <wire x1="223.52" y1="86.36" x2="238.76" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="PB2(PDI/MOSI)"/>
 <wire x1="134.62" y1="33.02" x2="223.52" y2="33.02" width="0.1524" layer="91"/>
 <junction x="223.52" y="86.36"/>
 <wire x1="223.52" y1="33.02" x2="223.52" y2="5.08" width="0.1524" layer="91"/>
 <junction x="223.52" y="33.02"/>
-<pinref part="CAN-CNT-3" gate="D" pin="SI"/>
+<pinref part="CC3" gate="D" pin="SI"/>
 <wire x1="223.52" y1="5.08" x2="248.92" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="86.36" x2="223.52" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="116.84" x2="256.54" y2="116.84" width="0.1524" layer="91"/>
@@ -10235,7 +10235,7 @@ High-power, low thermal resistance package.</description>
 </net>
 <net name="MISO" class="0">
 <segment>
-<pinref part="CAN-CNT-2" gate="D" pin="SO"/>
+<pinref part="CC2" gate="D" pin="SO"/>
 <wire x1="226.06" y1="45.72" x2="238.76" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="45.72" x2="226.06" y2="35.56" width="0.1524" layer="91"/>
 <junction x="226.06" y="45.72"/>
@@ -10243,12 +10243,12 @@ High-power, low thermal resistance package.</description>
 <wire x1="134.62" y1="35.56" x2="226.06" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="119.38" x2="226.06" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="83.82" x2="226.06" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="CAN-CNT-1" gate="D" pin="SO"/>
+<pinref part="CC1" gate="D" pin="SO"/>
 <wire x1="226.06" y1="83.82" x2="238.76" y2="83.82" width="0.1524" layer="91"/>
 <junction x="226.06" y="83.82"/>
 <wire x1="226.06" y1="35.56" x2="226.06" y2="2.54" width="0.1524" layer="91"/>
 <junction x="226.06" y="35.56"/>
-<pinref part="CAN-CNT-3" gate="D" pin="SO"/>
+<pinref part="CC3" gate="D" pin="SO"/>
 <wire x1="226.06" y1="2.54" x2="248.92" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="119.38" x2="241.3" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="119.38" x2="241.3" y2="172.72" width="0.1524" layer="91"/>
@@ -10261,10 +10261,10 @@ High-power, low thermal resistance package.</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="CAN-TRNS-1" gate="G$1" pin="RS"/>
+<pinref part="CT1" gate="G$1" pin="RS"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="289.56" y1="86.36" x2="292.1" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="CAN-CNT-1" gate="D" pin="RX1BF"/>
+<pinref part="CC1" gate="D" pin="RX1BF"/>
 <wire x1="271.78" y1="76.2" x2="281.94" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="76.2" x2="281.94" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="86.36" x2="289.56" y2="86.36" width="0.1524" layer="91"/>
@@ -10272,10 +10272,10 @@ High-power, low thermal resistance package.</description>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="CAN-TRNS-2" gate="G$1" pin="RS"/>
+<pinref part="CT2" gate="G$1" pin="RS"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="289.56" y1="48.26" x2="292.1" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="CAN-CNT-2" gate="D" pin="RX1BF"/>
+<pinref part="CC2" gate="D" pin="RX1BF"/>
 <wire x1="271.78" y1="38.1" x2="281.94" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="38.1" x2="281.94" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="48.26" x2="289.56" y2="48.26" width="0.1524" layer="91"/>
@@ -10295,7 +10295,7 @@ High-power, low thermal resistance package.</description>
 <pinref part="U$1" gate="G$1" pin="PD0(INT0/OC0B/SCL)"/>
 <wire x1="134.62" y1="5.08" x2="213.36" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="5.08" x2="213.36" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="CAN-CNT-1" gate="D" pin="INT"/>
+<pinref part="CC1" gate="D" pin="INT"/>
 <wire x1="213.36" y1="96.52" x2="238.76" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="D"/>
 <wire x1="208.28" y1="-40.64" x2="213.36" y2="-40.64" width="0.1524" layer="91"/>
@@ -10308,7 +10308,7 @@ High-power, low thermal resistance package.</description>
 <pinref part="U$1" gate="G$1" pin="PD6(T1/ADC9/!OC4D)"/>
 <wire x1="134.62" y1="20.32" x2="215.9" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="20.32" x2="215.9" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="CAN-CNT-2" gate="D" pin="RESET"/>
+<pinref part="CC2" gate="D" pin="RESET"/>
 <wire x1="215.9" y1="63.5" x2="238.76" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -10331,7 +10331,7 @@ High-power, low thermal resistance package.</description>
 <pinref part="U$1" gate="G$1" pin="PD1(INT1/SDA)"/>
 <wire x1="134.62" y1="7.62" x2="233.68" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="7.62" x2="233.68" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="CAN-CNT-2" gate="D" pin="INT"/>
+<pinref part="CC2" gate="D" pin="INT"/>
 <wire x1="233.68" y1="58.42" x2="238.76" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -10340,13 +10340,13 @@ High-power, low thermal resistance package.</description>
 <pinref part="U$1" gate="G$1" pin="PD4(ICP1/ADC8)"/>
 <wire x1="134.62" y1="15.24" x2="218.44" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="15.24" x2="218.44" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="CAN-CNT-1" gate="D" pin="RESET"/>
+<pinref part="CC1" gate="D" pin="RESET"/>
 <wire x1="218.44" y1="101.6" x2="238.76" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
-<pinref part="CAN-CNT-2" gate="D" pin="CS"/>
+<pinref part="CC2" gate="D" pin="CS"/>
 <wire x1="236.22" y1="53.34" x2="238.76" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="PB6(OC1B/OC4B/ADC13)"/>
 <wire x1="134.62" y1="43.18" x2="236.22" y2="43.18" width="0.1524" layer="91"/>
@@ -10379,7 +10379,7 @@ High-power, low thermal resistance package.</description>
 <pinref part="U$1" gate="G$1" pin="PB5(OC1A/ADC12/!OC4B)"/>
 <wire x1="134.62" y1="40.64" x2="167.64" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="40.64" x2="167.64" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="CAN-CNT-1" gate="D" pin="CS"/>
+<pinref part="CC1" gate="D" pin="CS"/>
 <wire x1="231.14" y1="66.04" x2="231.14" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="91.44" x2="238.76" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="63.5" x2="170.18" y2="66.04" width="0.1524" layer="91"/>
@@ -10389,7 +10389,7 @@ High-power, low thermal resistance package.</description>
 <net name="N$39" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PB7(OC0A/OC1C/RTS)"/>
-<pinref part="CAN-CNT-3" gate="D" pin="RESET"/>
+<pinref part="CC3" gate="D" pin="RESET"/>
 <wire x1="248.92" y1="20.32" x2="246.38" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="20.32" x2="246.38" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="25.4" x2="193.04" y2="25.4" width="0.1524" layer="91"/>
@@ -10404,7 +10404,7 @@ High-power, low thermal resistance package.</description>
 <wire x1="198.12" y1="53.34" x2="198.12" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="17.78" x2="241.3" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="17.78" x2="241.3" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="CAN-CNT-3" gate="D" pin="CS"/>
+<pinref part="CC3" gate="D" pin="CS"/>
 <wire x1="241.3" y1="10.16" x2="248.92" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -10508,15 +10508,15 @@ High-power, low thermal resistance package.</description>
 <wire x1="93.98" y1="119.38" x2="99.06" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="CAN-CNT-1" gate="P" pin="GND"/>
-<pinref part="CAN-CNT-2" gate="P" pin="GND"/>
+<pinref part="CC1" gate="P" pin="GND"/>
+<pinref part="CC2" gate="P" pin="GND"/>
 <junction x="-12.7" y="127"/>
 <wire x1="-12.7" y1="127" x2="-20.32" y2="127" width="0.1524" layer="91"/>
 <junction x="-20.32" y="127"/>
 <wire x1="-20.32" y1="127" x2="-20.32" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="GND" pin="GND"/>
-<pinref part="CAN-TRNS-2" gate="G$2" pin="GND"/>
-<pinref part="CAN-TRNS-1" gate="G$2" pin="GND"/>
+<pinref part="CT2" gate="G$2" pin="GND"/>
+<pinref part="CT1" gate="G$2" pin="GND"/>
 <wire x1="33.02" y1="127" x2="20.32" y2="127" width="0.1524" layer="91"/>
 <junction x="33.02" y="127"/>
 <wire x1="33.02" y1="127" x2="38.1" y2="127" width="0.1524" layer="91"/>
@@ -10526,10 +10526,10 @@ High-power, low thermal resistance package.</description>
 <wire x1="63.5" y1="127" x2="63.5" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="127" x2="0" y2="127" width="0.1524" layer="91"/>
 <junction x="20.32" y="127"/>
-<pinref part="CAN-CNT-3" gate="P" pin="GND"/>
+<pinref part="CC3" gate="P" pin="GND"/>
 <wire x1="0" y1="127" x2="20.32" y2="127" width="0.1524" layer="91"/>
 <junction x="0" y="127"/>
-<pinref part="CAN-TRNS-3" gate="G$2" pin="GND"/>
+<pinref part="CT3" gate="G$2" pin="GND"/>
 <junction x="48.26" y="127"/>
 <wire x1="63.5" y1="127" x2="63.5" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="IC6" gate="SUP" pin="GND"/>
@@ -10739,12 +10739,12 @@ High-power, low thermal resistance package.</description>
 <wire x1="12.7" y1="-25.4" x2="12.7" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="CAN-CNT-2" gate="P" pin="VCC"/>
+<pinref part="CC2" gate="P" pin="VCC"/>
 <junction x="-12.7" y="142.24"/>
 <wire x1="-20.32" y1="142.24" x2="-12.7" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="CAN-CNT-1" gate="P" pin="VCC"/>
-<pinref part="CAN-TRNS-1" gate="G$2" pin="VCC"/>
-<pinref part="CAN-TRNS-2" gate="G$2" pin="VCC"/>
+<pinref part="CC1" gate="P" pin="VCC"/>
+<pinref part="CT1" gate="G$2" pin="VCC"/>
+<pinref part="CT2" gate="G$2" pin="VCC"/>
 <junction x="33.02" y="142.24"/>
 <pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="142.24" x2="33.02" y2="142.24" width="0.1524" layer="91"/>
@@ -10754,10 +10754,10 @@ High-power, low thermal resistance package.</description>
 <wire x1="38.1" y1="142.24" x2="33.02" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="142.24" x2="0" y2="142.24" width="0.1524" layer="91"/>
 <junction x="20.32" y="142.24"/>
-<pinref part="CAN-CNT-3" gate="P" pin="VCC"/>
+<pinref part="CC3" gate="P" pin="VCC"/>
 <wire x1="0" y1="142.24" x2="20.32" y2="142.24" width="0.1524" layer="91"/>
 <junction x="0" y="142.24"/>
-<pinref part="CAN-TRNS-3" gate="G$2" pin="VCC"/>
+<pinref part="CT3" gate="G$2" pin="VCC"/>
 <junction x="48.26" y="142.24"/>
 <wire x1="63.5" y1="142.24" x2="63.5" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="IC6" gate="SUP" pin="V+"/>
@@ -10772,7 +10772,7 @@ High-power, low thermal resistance package.</description>
 <pinref part="JP1" gate="G$1" pin="3"/>
 </segment>
 <segment>
-<pinref part="CAN-TRNS-1" gate="G$1" pin="CANH"/>
+<pinref part="CT1" gate="G$1" pin="CANH"/>
 <wire x1="317.5" y1="88.9" x2="325.12" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="325.12" y1="88.9" x2="325.12" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="SJ2" gate="1" pin="2"/>
@@ -10786,11 +10786,11 @@ High-power, low thermal resistance package.</description>
 <pinref part="JP1" gate="G$1" pin="4"/>
 </segment>
 <segment>
-<pinref part="CAN-TRNS-1" gate="G$1" pin="CANL"/>
+<pinref part="CT1" gate="G$1" pin="CANL"/>
 <wire x1="317.5" y1="93.98" x2="335.28" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="335.28" y1="93.98" x2="340.36" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="340.36" y1="93.98" x2="340.36" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="CAN1-TRM" gate="G$1" pin="1"/>
+<pinref part="R14" gate="G$1" pin="1"/>
 <junction x="335.28" y="93.98"/>
 </segment>
 </net>
@@ -10800,7 +10800,7 @@ High-power, low thermal resistance package.</description>
 <pinref part="JP1" gate="G$1" pin="5"/>
 </segment>
 <segment>
-<pinref part="CAN-TRNS-2" gate="G$1" pin="CANH"/>
+<pinref part="CT2" gate="G$1" pin="CANH"/>
 <wire x1="317.5" y1="50.8" x2="345.44" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="345.44" y1="50.8" x2="345.44" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="SJ3" gate="1" pin="2"/>
@@ -10814,10 +10814,10 @@ High-power, low thermal resistance package.</description>
 <pinref part="JP1" gate="G$1" pin="6"/>
 </segment>
 <segment>
-<pinref part="CAN-TRNS-2" gate="G$1" pin="CANL"/>
+<pinref part="CT2" gate="G$1" pin="CANL"/>
 <wire x1="317.5" y1="55.88" x2="360.68" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="360.68" y1="55.88" x2="360.68" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="CAN2-TRM" gate="G$1" pin="1"/>
+<pinref part="R15" gate="G$1" pin="1"/>
 <wire x1="360.68" y1="93.98" x2="360.68" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="93.98" x2="360.68" y2="93.98" width="0.1524" layer="91"/>
 <junction x="360.68" y="93.98"/>
@@ -10832,24 +10832,24 @@ High-power, low thermal resistance package.</description>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="CAN-CNT-3" gate="D" pin="TXCAN"/>
-<pinref part="CAN-TRNS-3" gate="G$1" pin="TXD"/>
+<pinref part="CC3" gate="D" pin="TXCAN"/>
+<pinref part="CT3" gate="G$1" pin="TXD"/>
 <wire x1="281.94" y1="15.24" x2="297.18" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="CAN-CNT-3" gate="D" pin="RXCAN"/>
-<pinref part="CAN-TRNS-3" gate="G$1" pin="RXD"/>
+<pinref part="CC3" gate="D" pin="RXCAN"/>
+<pinref part="CT3" gate="G$1" pin="RXD"/>
 <wire x1="281.94" y1="12.7" x2="297.18" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="CAN-TRNS-3" gate="G$1" pin="RS"/>
+<pinref part="CT3" gate="G$1" pin="RS"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="294.64" y1="5.08" x2="297.18" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="CAN-CNT-3" gate="D" pin="RX1BF"/>
+<pinref part="CC3" gate="D" pin="RX1BF"/>
 <wire x1="281.94" y1="-5.08" x2="287.02" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="287.02" y1="-5.08" x2="287.02" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="287.02" y1="5.08" x2="294.64" y2="5.08" width="0.1524" layer="91"/>
@@ -10861,7 +10861,7 @@ High-power, low thermal resistance package.</description>
 <pinref part="JP1" gate="G$1" pin="7"/>
 </segment>
 <segment>
-<pinref part="CAN-TRNS-3" gate="G$1" pin="CANH"/>
+<pinref part="CT3" gate="G$1" pin="CANH"/>
 <wire x1="322.58" y1="7.62" x2="365.76" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="SJ4" gate="1" pin="2"/>
 <wire x1="365.76" y1="116.84" x2="365.76" y2="134.62" width="0.1524" layer="91"/>
@@ -10875,9 +10875,9 @@ High-power, low thermal resistance package.</description>
 <pinref part="JP1" gate="G$1" pin="8"/>
 </segment>
 <segment>
-<pinref part="CAN-TRNS-3" gate="G$1" pin="CANL"/>
+<pinref part="CT3" gate="G$1" pin="CANL"/>
 <wire x1="322.58" y1="12.7" x2="381" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="CAN3-TRM" gate="G$1" pin="1"/>
+<pinref part="R16" gate="G$1" pin="1"/>
 <wire x1="375.92" y1="93.98" x2="381" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="381" y1="93.98" x2="381" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="381" y1="12.7" x2="381" y2="93.98" width="0.1524" layer="91"/>
@@ -10974,7 +10974,7 @@ High-power, low thermal resistance package.</description>
 <wire x1="180.34" y1="58.42" x2="187.96" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="50.8" x2="187.96" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="12.7" x2="246.38" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="CAN-CNT-3" gate="D" pin="INT"/>
+<pinref part="CC3" gate="D" pin="INT"/>
 <wire x1="246.38" y1="12.7" x2="248.92" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -11081,21 +11081,21 @@ High-power, low thermal resistance package.</description>
 </net>
 <net name="N$46" class="0">
 <segment>
-<pinref part="CAN1-TRM" gate="G$1" pin="2"/>
+<pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="335.28" y1="116.84" x2="335.28" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="SJ2" gate="1" pin="1"/>
 </segment>
 </net>
 <net name="N$51" class="0">
 <segment>
-<pinref part="CAN2-TRM" gate="G$1" pin="2"/>
+<pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="355.6" y1="116.84" x2="355.6" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="SJ3" gate="1" pin="1"/>
 </segment>
 </net>
 <net name="N$58" class="0">
 <segment>
-<pinref part="CAN3-TRM" gate="G$1" pin="2"/>
+<pinref part="R16" gate="G$1" pin="2"/>
 <wire x1="375.92" y1="116.84" x2="375.92" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="SJ4" gate="1" pin="1"/>
 </segment>
@@ -11152,7 +11152,7 @@ High-power, low thermal resistance package.</description>
 <net name="N$43" class="0">
 <segment>
 <wire x1="208.28" y1="86.36" x2="208.28" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="CAN-CNT-1" gate="D" pin="OSC1"/>
+<pinref part="CC1" gate="D" pin="OSC1"/>
 <wire x1="208.28" y1="78.74" x2="238.76" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="208.28" y1="86.36" x2="200.66" y2="86.36" width="0.1524" layer="91"/>
@@ -11179,23 +11179,23 @@ High-power, low thermal resistance package.</description>
 <pinref part="C10" gate="G$1" pin="1"/>
 <pinref part="Q2" gate="G$1" pin="3"/>
 <wire x1="200.66" y1="78.74" x2="200.66" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="CAN-CNT-1" gate="D" pin="OSC2"/>
+<pinref part="CC1" gate="D" pin="OSC2"/>
 <wire x1="238.76" y1="76.2" x2="200.66" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="76.2" x2="195.58" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CAN1_CLKOUT" class="0">
 <segment>
-<pinref part="CAN-CNT-2" gate="D" pin="OSC1"/>
+<pinref part="CC2" gate="D" pin="OSC1"/>
 <wire x1="238.76" y1="40.64" x2="208.28" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="40.64" x2="208.28" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="CAN-CNT-3" gate="D" pin="OSC1"/>
+<pinref part="CC3" gate="D" pin="OSC1"/>
 <wire x1="208.28" y1="-2.54" x2="248.92" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="40.64" x2="208.28" y2="71.12" width="0.1524" layer="91"/>
 <junction x="208.28" y="40.64"/>
 <wire x1="208.28" y1="71.12" x2="274.32" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="71.12" x2="274.32" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="CAN-CNT-1" gate="D" pin="CLKOUT"/>
+<pinref part="CC1" gate="D" pin="CLKOUT"/>
 <wire x1="274.32" y1="101.6" x2="271.78" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
